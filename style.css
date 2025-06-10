@@ -1,3 +1,173 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+/* Hero principal */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1529078155058-5d716f45d604?auto=format&fit=crop&w=1600&q=80') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.9rem 1.8rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #005fa3;
+}
+
+/* Secciones generales */
+section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #0077cc;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tarjetas de proyecto */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 5px solid #0077cc;
+  box-shadow: 0 8px 20px rgba(0, 119, 204, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #005fa3;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Galería */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -84,6 +254,7 @@ footer {
   padding: 1rem;
   margin-top: 4rem;
 }
+
 .about {
   background-color: #fff;
   padding: 4rem 2rem;
@@ -105,6 +276,30 @@ footer {
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.member {
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 119, 204, 0.1);
+}
+
+.member h3 {
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+
+.member p {
+  font-size: 0.95rem;
+}
+
 .profesores h4 {
   color: #444;
   margin-bottom: 0.5rem;
@@ -114,6 +309,7 @@ footer {
   font-weight: bold;
   color: #0077cc;
 }
+
 .proyecto {
   background-color: #e6f2ff;
   padding: 4rem 2rem;
@@ -163,6 +359,7 @@ footer {
 .card p {
   font-size: 0.95rem;
 }
+
 .impacto {
   background-color: #fff;
   padding: 4rem 2rem;
@@ -207,6 +404,7 @@ footer {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
+
 .galeria {
   background-color: #e6f2ff;
   padding: 4rem 2rem;
@@ -246,31 +444,7 @@ footer {
 .grid-galeria img:hover {
   transform: scale(1.05);
 }
-.rural {
-  background-color: #ffffff;
-  padding: 4rem 2rem;
-}
 
-.rural .container {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-.rural h2 {
-  font-size: 2.2rem;
-  color: #0077cc;
-  margin-bottom: 1.5rem;
-}
-
-.rural .intro {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-
-.rural-content p {
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  text-align: justify;
+body {
+  overflow-x: hidden;
 }
