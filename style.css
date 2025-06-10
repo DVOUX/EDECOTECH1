@@ -246,3 +246,31 @@ footer {
 .grid-galeria img:hover {
   transform: scale(1.05);
 }
+.rural {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.rural .container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.rural h2 {
+  font-size: 2.2rem;
+  color: #0077cc;
+  margin-bottom: 1.5rem;
+}
+
+.rural .intro {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.rural-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: justify;
+}
